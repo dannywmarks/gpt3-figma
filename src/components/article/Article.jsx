@@ -1,12 +1,14 @@
-import React from 'react'
-import './article.css'
+import React from "react";
+import "./article.css";
 
-const Article = () => {
+const Article = ({ imgUrl }) => {
   return (
-    <div>
-      Article
+    <div className="gpt3__blog-container_article">
+      <div className="gpt3__blog-container_article-image">
+        <img src={imgUrl} alt="blog" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Article
+export default Article;
